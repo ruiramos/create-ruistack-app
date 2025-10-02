@@ -7,11 +7,7 @@ const EXAMPLE_REPO = "example/repo";
 const STARS = 999;
 
 describe("get-stars", () => {
-  let app;
-
-  beforeAll(() => {
-    app = createTestApp();
-  });
+  const app = createTestApp();
 
   test("gets the number of stars from the example repo", async () => {
     server.use(
