@@ -58,10 +58,10 @@ function App() {
             {isLoading || isRefetching ? (
               <p>Loading...</p>
             ) : isSuccess ? (
-              <p>
+              <div>
                 Stars on <pre className="inline text-sm">{repoName}</pre>: ✨{" "}
                 {data.stars} ✨
-              </p>
+              </div>
             ) : isError ? (
               <p>Error: {JSON.parse(error.message).message}</p>
             ) : null}
