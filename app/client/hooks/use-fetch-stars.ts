@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
+import { StarsResponse } from "types";
 
 const useFetchStars = (repoName: string) =>
-  useQuery({
+  useQuery<StarsResponse>({
     queryKey: ["stars", repoName],
     enabled: false,
     retry: false,
