@@ -2,7 +2,7 @@
 
 Putting together a full-stack TypeScript/Express/React web app demonstrating some of what I believe to be best practices.
 
-Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app), many thanks Nick for many of your ideas I've used here. 🙏❤️
+Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app), thanks Nick for many of your ideas I've used here. 🙏❤️
 
 ### Still left to do:
 
