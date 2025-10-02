@@ -6,9 +6,9 @@ Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app),
 
 ### Still left to do:
 
- - [ ] Copy Nick's routes/handlers distinction
- - [ ] Switch styling to tailwind (or css modules?)
- - [ ] Integrate component library, maybe shadcn/ui or origin
+ - [x] Copy Nick's routes/handlers distinction
+ - [x] Switch styling to tailwind (or css modules?)
+ - [x] Integrate component library, maybe shadcn/ui or origin
  - [ ] Add react-query, maybe to use the API
  - [ ] Global types (or zod schemas) so you can reuse FE/BE
  - [ ] Add (playwright?) component and end-to-end tests
@@ -18,4 +18,5 @@ Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app),
 ### Maybe:
 
  - [ ] Hook up with tRPC
+ - [ ] Explore SSR with react router
 

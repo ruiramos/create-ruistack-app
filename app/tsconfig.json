@@ -20,9 +20,10 @@
     "skipLibCheck": true,
     "paths": {
       "~/server/*": ["server/*"],
-      "~/client/*": ["client/*"]
+      "~/client/*": ["client/*"],
+      "@/*": ["client/*"]
     }
   },
-    "include": ["server/*", "client/*"],
+    "include": ["server/**/*", "client/**/*", "types/*"],
   "exclude": ["node_modules"] 
 }
