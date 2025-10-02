@@ -1,8 +1,10 @@
 import express from "express";
 import ViteExpress from "vite-express";
+import env from "./lib/env";
 import apiRouter from "./routes";
 
 const PORT = 3000;
+console.log(env);
 
 export const createExpressApp = () => {
   const app = express();

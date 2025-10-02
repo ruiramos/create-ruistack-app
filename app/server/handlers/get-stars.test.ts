@@ -1,7 +1,7 @@
 import { http, HttpResponse } from "msw";
 import { beforeAll, describe, expect, test } from "vitest";
-import createTestApp from "~/server/utils/create-test-app";
-import { server } from "~/server/utils/mocks";
+import createTestApp from "~/server/test/create-test-app";
+import { server } from "~/server/test/mock-service-worker/server";
 
 const EXAMPLE_REPO = "example/repo";
 const STARS = 999;

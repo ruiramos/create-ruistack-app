@@ -1,6 +1,6 @@
 import z from "zod";
 import { getRepoStars } from "~/server/services/github";
-import { createRouteHandler } from "~/server/utils/create-route-handler";
+import { createRouteHandler } from "~/server/lib/create-route-handler";
 
 const getStars = createRouteHandler()
   .withQueryParams(z.object({ repo: z.string() }))

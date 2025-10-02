@@ -1,5 +1,5 @@
 import { Router } from "express";
-import getStars from "./get-stars";
+import getStars from "~/server/handlers/get-stars";
 
 const starsApi = Router();
 
