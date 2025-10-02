@@ -15,5 +15,5 @@ Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app),
 
 ### Maybe:
 
- - Hook up with tRPC
+ - [ ] Hook up with tRPC
 
