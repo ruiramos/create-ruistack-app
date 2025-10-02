@@ -6,11 +6,13 @@ Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app),
 
 ### Still left to do:
 
+ - [ ] Copy Nick's routes/handlers distinction
  - [ ] Switch styling to tailwind (or css modules?)
  - [ ] Integrate component library, maybe shadcn/ui or origin
  - [ ] Add react-query, maybe to use the API
  - [ ] Global types (or zod schemas) so you can reuse FE/BE
  - [ ] Add (playwright?) component and end-to-end tests
+ - [ ] Add DB, mock auth maybe
  - [ ] Actually make this a generator instead of just a repo with a sample app
 
 ### Maybe:
