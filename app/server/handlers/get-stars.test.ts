@@ -7,7 +7,7 @@ const EXAMPLE_REPO = "example/repo";
 const STARS = 999;
 
 describe("get-stars", () => {
-  const app = createTestApp();
+  const { httpClient } = createTestApp();
 
   test("gets the number of stars from the example repo", async () => {
     server.use(
@@ -18,15 +18,13 @@ describe("get-stars", () => {
       }),
     );
 
-    const response = await app.request
-      .get("/api/stars?repo=" + EXAMPLE_REPO)
-      .set("Accept", "application/json");
+    const response = await httpClient.get("/api/stars?repo=" + EXAMPLE_REPO);
 
     expect(response.body).toEqual({ stars: STARS });
   });
 
   test("returns 400 if repo is not provided", async () => {
-    const response = await app.request.get("/api/stars");
+    const response = await httpClient.get("/api/stars");
     expect(response.status).toEqual(400);
   });
 
@@ -37,7 +35,7 @@ describe("get-stars", () => {
       }),
     );
 
-    const response = await app.request.get("/api/stars?repo=not/found");
+    const response = await httpClient.get("/api/stars?repo=not/found");
     expect(response.status).toEqual(500);
   });
 });

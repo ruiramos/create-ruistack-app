@@ -5,6 +5,6 @@ export default function createTestApp() {
   const app = createExpressApp();
   return {
     app,
-    request: request(app),
+    httpClient: request(app),
   };
 }
