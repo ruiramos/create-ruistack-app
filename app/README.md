@@ -11,6 +11,7 @@ Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app),
  - [ ] Add react-query, maybe to use API
  - [ ] Global types (or zod schemas) so you can reuse
  - [ ] Add playwright component and end-to-end tests
+ - [ ] Actually make this a generator instead of just a repo with a sample app
 
 ### Maybe:
 
