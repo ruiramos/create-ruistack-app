@@ -11,6 +11,7 @@ Inspired by [create-nhollas-app](https://github.com/Nhollas/create-nhollas-app),
  - [x] Integrate component library, maybe shadcn/ui or origin
  - [x] Add react-query, maybe to use the API
  - [x] Global types (or zod schemas) so you can reuse FE/BE
+ - [ ] Add Dockerfile
  - [ ] Add (playwright?) component and end-to-end tests
  - [ ] Add DB, mock auth maybe
  - [ ] Actually make this a generator instead of just a repo with a sample app
