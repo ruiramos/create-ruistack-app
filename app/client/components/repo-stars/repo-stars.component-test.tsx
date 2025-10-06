@@ -2,11 +2,14 @@ import { test, expect } from "@playwright/experimental-ct-react";
 import RepoStars from "./repo-stars";
 
 test("should render the component with example data", async ({ mount }) => {
+  const repoName = "facebook/react";
+  const stars = 999;
+
   const component = await mount(
     <RepoStars
-      repoName="facebook/react"
+      repoName={repoName}
       setRepoName={() => {}}
-      data={{ stars: 999 }}
+      data={{ stars }}
       isLoading={false}
       isRefetching={false}
       isSuccess={true}
@@ -15,5 +18,5 @@ test("should render the component with example data", async ({ mount }) => {
       error={null}
     />,
   );
-  await expect(component).toContainText("Stars on facebook/react: ✨ 999 ✨");
+  await expect(component).toContainText(`Stars on ${repoName}: ✨ ${stars} ✨`);
 });
