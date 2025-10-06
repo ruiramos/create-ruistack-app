@@ -51,6 +51,7 @@ function App() {
             <Input
               value={repoName}
               onChange={(e) => setRepoName(e.target.value)}
+              placeholder="repo, e.g. facebook/react"
             />
             <Button>Fetch stars</Button>
           </form>
