@@ -12,6 +12,8 @@ const __dirname = dirname(__filename);
  */
 export default defineConfig({
   testDir: "./client/components",
+  testMatch: "**/*.component-test.tsx",
+
   /* The base directory, relative to the config file, for snapshot files created with toMatchSnapshot and toHaveScreenshot. */
   snapshotDir: "./__snapshots__",
   /* Maximum time one test can run for. */

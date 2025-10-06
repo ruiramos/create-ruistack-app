@@ -10,7 +10,8 @@
     "start": "tsx server/index.ts",
     "check:types": "tsc --watch --noEmit",
     "test": "vitest",
-    "test-ct": "playwright test -c playwright-ct.config.ts"
+    "test-component": "playwright test -c playwright-ct.config.ts",
+    "test-e2e": "playwright test"
   },
   "keywords": [],
   "author": "",
