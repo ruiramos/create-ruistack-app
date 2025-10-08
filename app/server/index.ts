@@ -3,9 +3,6 @@ import ViteExpress from "vite-express";
 import env from "./lib/env";
 import apiRouter from "./routes";
 
-const PORT = 3000;
-console.log(env);
-
 export const createExpressApp = () => {
   const app = express();
   app.use("/api", apiRouter);
@@ -15,6 +12,8 @@ export const createExpressApp = () => {
 };
 
 const app = createExpressApp();
+const { PORT } = env;
+
 ViteExpress.listen(app, PORT, () =>
   console.log(`Server is listening on port ${PORT}`),
 );
